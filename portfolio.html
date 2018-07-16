@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+
+      section{
+        width: 100vw;
+        height: 100vh;
+        padding:50px;
+      }
+
+      .cl_white{
+        color: white;
+      }
+
+      .cl_img{
+        width: 375px;
+        height: 250px;
+        transition: opacity .5s ease-in-out;
+      }
+
+      img:hover{
+        opacity: .5;
+      }
+
+    .col_text{
+      -webkit-column-count: 3;
+    }
+    </style>
+
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+
+
+<!-- NAVBAR-->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+      <ul class="nav navbar-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#mywork">What do I do</a></li>
+        <li><a href="#aboutme">What about me</a></li>
+        <li><a href="#contactme">Contact me</a></li>
+      </ul>
+    </nav>
+
+
+<!-- HOME-->
+    <section id="home" style="background: url(img.jpg); background-size: 100% 100%;" class="cl_white text-center">
+      <h1>My Portfolio</h1>
+      <p class="lead">Let just read myself and contact me!</p>
+      <button class="btn"><a href="#contactme">Contact Me!</a></button>
+    </section>
+
+<!-- MY WORK -->
+    <<section id="mywork">
+      <div class="page-header"> <h1 class="text-center">My Work</h1> </div>
+
+      <div class="container">
+        <div class="row">
+        <div>
+        <div class="col-md-4">
+          <img class="cl_img" src="my_work1.jpg">
+        </div>
+        <div class="col-md-4">
+          <img class="cl_img" src="my_work2.jpg">
+        </div>
+        <div class="col-md-4">
+          <img class="cl_img" src="my_work3.jpg">
+        </div>
+        <div class="col-md-4">
+          <img class="cl_img" src="my_work4.jpg">
+        </div>
+        <div class="col-md-4">
+          <img class="cl_img" src="my_work5.jpg">
+        </div>
+        <div class="col-md-4">
+          <img class="cl_img" src="my_work6.jpg">
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+<!-- ABOUT ME-->
+    <section id="aboutme">
+      <div class="page-header">
+        <h1 class="text-center">About me</h1>
+      </div>
+      <div class="col_text">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
+         quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi,
+         id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+         optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+         autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+         Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus
+         asperiores repellat."</div><br>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel panel-primary text-center">
+            <div class="panel-heading">
+              <h3>Web designing</h3>
+            </div>
+            <div class="panel-body">
+              <img src="aboutme3.png" style="border-radius:100%;" class="cl_img center-block">
+            </div>
+            <div class="panel-footer"></div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="panel panel-primary text-center">
+            <div class="panel-heading text-center">
+              <h3>Android development</h3>
+            </div>
+            <div class="panel-body">
+              <img src="aboutme4.jpg" style="border-radius:100%;" class="cl_img center-block">
+            </div>
+            <div class="panel-footer"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- CONTACT ME -->
+    <section id="contactme" style="background:silver">
+      <div class="page-header">
+        <h3 class="text-center">Contact Me!</h3>
+      </div>
+      <form class="col-md-offset-4 col-md-5">
+        <div class="form-group">
+          <input class="form-control" placeholder="Enter your name" type="text">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <input type="subject" class="form-control" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" placeholder="Comments" rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn btn-block btn-success">
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
